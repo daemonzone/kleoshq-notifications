@@ -1,0 +1,13 @@
+{
+  "name": "kleoshq-notifications",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Outbound notifications for the SiteWitness services (e-mail via Resend today). One endpoint, one template set, one log (email_log). Owns the Resend credentials for everything new; older senders (orders, analyzer) are moved here one at a time.",
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "pg": "^8.20.0"
+  }
+}
