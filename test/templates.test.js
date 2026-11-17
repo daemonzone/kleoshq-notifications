@@ -28,8 +28,8 @@ test('links must be http(s)', () => {
 
 test('the approval mail promises the feedback request in both languages', () => {
   const d = { first_name: 'A', email: 'a@b.it', login_url: 'https://x.it/l', register_url: 'https://x.it/r' };
-  assert.ok(templates.beta_approved(d, 'it').text.includes('almeno 1 feedback'));
-  assert.ok(templates.beta_approved(d, 'en').text.includes('at least 1 piece of feedback'));
+  assert.ok(templates.beta_approved(d, 'it').text.includes('almeno un feedback'));
+  assert.ok(templates.beta_approved(d, 'en').text.includes('at least one piece of feedback'));
 });
 
 test('the approval mail names the address to use', () => {
